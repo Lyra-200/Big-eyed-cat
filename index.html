@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Doraemon's Pocket</title>
+      <!----css link-->
+      <link rel="stylesheet" href="index-css.css">
+      <!---Add browser label icon--->
+      <link rel="shortcut icon" href="./img/shortcut-icon.jpg">
+  </head>
+  <body>
+    <!---------------------------------header---------------------------------------->
+    <header>
+      <input type="checkbox" name="" id="toggler">
+      <label for="toggler" class="drop-down-menu"><img src="./img/下拉菜单.png" alt=""></label>
+  
+      <img src="./img/logo.jpg" class="logo">
+  
+      <nav class="navbar">
+        <a class="active" href="../index/index.html">HOME</a>
+        <a href="../product/products.html">PRODUCT</a>
+        <a href="../about/about us.html">ABOUT</a> 
+      </nav>
+      
+      <div class="icon-container">
+        <div class="icons">
+          <img src="./img/用户.png" id="registion_icon">
+          <a href="../Login/Login.html" class="login">login</a>   
+        </div>
+
+        <!------------------------ light dark mode swtich ------------------------------>
+        <div id="switch">
+          <label class="switch">
+            <input type="checkbox" onclick="changeMode()" style="background-image: url(./img/);">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      
+    </header>
+
+
+
+
+
+
+    <!------------------------------- search box ----------------------------------->
+    <div class="search-box">
+      <img src="./img/搜索 .png" id="search_icon">
+      <input type="text" placeholder="Search here...">
+      <button class="search-button" title="search">Search</button>
+    </div>
+
+
+   
+
+    
+    <!--------------------------------------Product category display------------------------------------->
+    <div class="contai">
+      <div id="slide">
+        <div class="item" style="background-image: url(./img/娇兰.webp);">
+          <div class="content">
+            <div class="name">Skincare products</div>
+            <div class="des">Guerlain Emperor Bee Pose Revitalization&Recovery Honey essence Liquid Moisturizing&Moisturizing</div>
+            <button>Buy it now</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(./img/华为.jpg);">
+          <div class="content">
+            <div class="name">mobile phone</div>
+            <div class="des">Huawei flagship phone Mate 60 Pro 12GB+1TB Yachuan Qing</div>
+            <button><a href="#" target="_blank">Buy it now</a></button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(./img/鞋子.webp);">
+          <div class="content">
+            <div class="name">shoes</div>
+            <div class="des">Adidas SUPERSTAR SUPERMODIFIED SHOES Classic Shell Head Sports Shoes Board Shoes Small White Shoes</div>
+            <button>Buy it now</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(./img/手表.jpeg);">
+          <div class="content">
+            <div class="name">Wrist watch</div>
+            <div class="des">G-SHOCK BGA-320 series BGA-320AQ-4A</div>
+            <button>Buy it now</button>
+          </div>
+        </div>
+        
+        <div class="item" style="background-image: url(./img/稻香村.jpg);">
+          <div class="content">
+            <div class="name">food</div>
+            <div class="des">Daoxiangcun DXC Special Cake Leisure Dim sum Snack Biscuit Hawthorn Guokui</div>
+            <button>Buy it now</button>
+          </div>
+        </div>
+    
+      <div class="buttons">
+        <button id="prev"><img src="./img/手左.png"></button>
+        <button id="next"><img src="./img/手右.png"></button>
+      </div>
+    </div>
+
+
+
+
+    <!------------------------------------------ Sections ----------------------------------->
+    <section class="purchase-information">
+      <div class="icons">
+          <img src="./img/truck.png" alt="">
+          <div class="info">
+              <h3>free delivery</h3>
+              <span>on all orders</span>
+          </div>
+      </div>
+
+      <div class="icons">
+          <img src="./img/安全.png" alt="">
+          <div class="info">
+              <h3>10 days returns</h3>
+              <span>moneyback guarantee</span>
+          </div>
+      </div>
+
+      <div class="icons">
+          <img src="./img/订单_选中.png" alt="">
+          <div class="info">
+              <h3>offer & gifts</h3>
+              <span>on all orders</span>
+          </div>
+      </div>
+
+      <div class="icons">
+          <img src="./img/支付类型.png" alt="">
+          <div class="info">
+              <h3>secure paymens</h3>
+              <span>protected by paypal</span>
+          </div>
+      </div>
+    
+    </section>
+
+
+
+
+    <!-------------------------------- commodity ----------------------------------------------->
+    <section class="commodity" id="commodity">
+        <h1 class="heading">products</h1>
+
+        <div class="container2">
+            <div class="box">
+                <a href="#"></a> 
+                <img src="./img/薯片.jpg" alt="">
+                <h3>Lay's <br>Le Shi Potato Chips 135g Bag, Large Package, Original Green Lemon, Cucumber, Tomato Barbecue, Casual Snacks [135g * 6 bags] Green Lemon Flavor</h3>
+                <p>￥54.90</p>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+              <a href="#"></a> 
+              <img src="./img/麦片.jpg" alt="">
+              <h3>Xianhuiyao<br>Yogurt, Fruits, Grains, and Cereals for Nutritional Breakfast Baking, Fruits, Oats, Crispy and Dry Eating, Instant Meal Replacement and Drink Cereals</h3>
+              <p>￥39.00</p>
+              <a href="#" class="btn">add to cart</a>
+          </div>
+            
+            <div class="box">
+                <a href="#"></a> 
+                <img src="./img/冲锋衣.jpg" alt="">
+                <h3>Woodpecker<br>Outdoor Charge Coat Men's and Women's Trinity Windproof and Waterproof Coat Spring and Autumn New Phantom Black</h3>
+                <p>￥178</p>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#"></a> 
+                <img src="./img/裤子.jpg" alt="">
+                <h3>JP<br>Spring and Autumn Leisure Pants New Men's Pants Simple and Versatile Trend Pants Loose and High Elastic</h3>
+                <p>￥139</p>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#"></a> 
+                <img src="./img/ysl口红.jpg" alt="">
+                <h3>Yves Saint Laurent<br>Fine tube velvet pure lipstick <br>small black stripe 314 <br># cold brown 2g</h3>
+                <p>￥239.00</p>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#"></a> 
+                <img src="./img/香水.jpg" alt="">
+                <h3>Minglan<br>Luge Blue Jungle Gulong Men's Wooden perfume Long lasting Fragrance Gift Box <br> Luge Blue 50ml</h3>
+                <p>￥129.90</p>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------------------------- fixedIcons --------------------------------------------->
+    <div class="fixedIcons">
+      <a href="" class="returnTop" title="returnTop" id="top-btn"><img src="./img/icon_回顶部.png"></a>
+      <a class="shopping_cart_icon"><img src="./img/购物车2.png"></a>
+    </div>
+    
+
+
+
+      <!----------------------------------footer-------------------------------------->
+    <section class="footer">
+      <div class="box-container">
+        
+          <div class="box">
+            <h3>Quick links</h3>
+            <a href="../index/index.html">home</a>
+            <a href="../product/products.html">products</a>
+            <a href="../about/about us.html">about</a>
+          </div>
+  
+          <div class="box">
+              <h3>Extra links</h3>
+              <a href="#">my account</a>
+              <a href="#">my order</a>
+              <a href="#">my favorite</a>
+          </div>
+  
+          <div class="box">
+              <h3>Team member</h3>
+              <a href="#">646771 Ci Song</a>
+              <a href="#">646806 Jiaqi Xu</a>
+              <a href="#">646291 Wenxin Li</a>
+              <a href="#">646357 Yijia Gao</a>
+          </div>
+      </div>
+      <div class="credit"> created by <span> Group 12 </span> | all rights reserved </div>
+    </section>
+
+
+
+
+    <!-------------------------------------js link--------------------------------------->
+    <script src="index-js.js"></script>
+  </body>
+</html>

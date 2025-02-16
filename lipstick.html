@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon's Pocket</title>
+    <link rel="stylesheet" type="text/css" href="product-css.css">
+    <script src="product-js.js" defer></script>
+    <!---Add browser label icon--->
+    <link rel="shortcut icon" href="./img/shortcut-icon.jpg">
+</head>
+
+
+
+<body>
+    <!-- header -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="drop-down-menu"><img src="./img/下拉菜单.png" alt=""></label>
+
+        <img src="./img/logo.jpg" class="logo">
+
+        <nav class="navbar">
+            <a href="../index/index.html">HOME</a>
+            <a class="active" href="../product/products.html">PRODUCT</a>
+            <a href="../about/about us.html">ABOUT</a> 
+        </nav>
+        
+        <div class="icon-container">
+        <div class="icons">
+            <img src="./img/用户.png" id="registion_icon">
+            <a href="../Login/Login.html" class="login">login</a>   
+        </div>
+
+        <!------------------------ light dark mode swtich ------------------------------>
+        <div id="switch">
+            <label class="switch">
+            <input type="checkbox" onclick="changeMode()" style="background-image: url(./img/);">
+            <span class="slider"></span>
+            </label>
+        </div>
+        </div>
+        
+    </header>
+
+
+
+    <!-- product card -->
+    <div class="prod-card">
+        <div class="img">
+            <div class="image-zoom">
+                <img id="productImage" src="./img/lipstick.png">
+            </div>
+        </div>
+        <div class="prod-info">
+            <h2>LeRouge Lipstick</h2>
+            <span class="price"><i class="ion-social-usd"></i>￥390</span>
+           
+            <h3>Sizes</h3>
+            <div class="button-container" id="sizess">
+                <button id="N338">N338-Paris Cool Rose</button>
+                <button id="N116">N116-Lazy Bean Paste</button>
+                <button id="N402">N402-Mid Summer Fig</button>
+                <button id="N501">N501-Charming Tea Brown</button>
+            </div>
+            
+            <h3>Styles</h3>
+            <div class="button-container" id="styles">
+                <button class="colorBtn">Basic model</button>
+            </div>
+            
+            <a class="addbtn" href="#"><i class="ion-ios-cart"></i>Add to Cart</a>
+        </div>
+    </div>
+
+
+    
+    <!-- product  description-->
+    <div class="prod-description">
+        <div class="description-item">
+            <img src="./img/N338.jpg" alt="Image 1">
+            <div class="text-content">
+                <h2>N338-Paris Cool Rose(Recommended!)</h2>
+                <h2>Top selling in our store!</h2>
+                <br>
+                <p>Classic rose color, elegant and beautiful.Enhance the temperament while displaying white.</p>
+                <br>
+                <p>Suitable for women of all ages!</p>
+                <br>
+                <p>Suitable for dates, girlfriends shopping, outings, and other occasions.</p>
+            </div>
+
+        </div>
+        <div class="description-item">
+            <img src="./img/N116.jpg" alt="Image 2">
+            <div class="text-content">
+                <h2>N116-Lazy Bean Paste(Recommended!)</h2>
+                <br>
+                <p>A slightly pink bean paste color, Will make your temperament more gentle.</p>
+                <br>
+                <p>More suitable for student parties and young people.</p>
+                <br>
+                <p>Also can be paired with forest style clothing, casual style, and winter coats, sweaters, etc.</p>
+            </div>
+        </div>
+        <div class="description-item">
+            <img src="./img/N402.jpg" alt="Image 2">
+            <div class="text-content">
+                <h2>N402-Mid Summer Fig</h2>
+                <br>
+                <p>The bright yet deep red color enhances the temperament and makes the makeup look more exquisite.</p>
+                <br>
+                <p>Designed for more mature women.</p>
+                <br>
+                <p>Suitable for pairing with formal attire for meetings or evening parties. This lipstick will make you the most dazzling person in the entire occasion.</p>
+            </div>
+        </div>
+        <div class="description-item">
+            <img src="./img/N501.jpg" alt="Image 2">
+            <div class="text-content">
+                <h2>N501-Charming Tea Brown</h2>
+                <br>
+                <p>A darker brown lipstick, suitable for most skin colors. Huge color contrast can make your skin appear whiter</p>
+                <br>
+                <p>Tailored for women in the workplace.</p>
+                <br>
+                <p>Using it in more serious situations (such as during work) can make you appear more mature and stable.</p>
+            </div>
+    </div>
+    
+    <!---------------------------------- fixedIcons --------------------------------------------->
+    <div class="fixedIcons">
+        <a href="" class="returnTop" title="returnTop" id="top-btn"><img src="./img/icon_回顶部.png"></a>
+        <a class="shopping_cart_icon"><img src="./img/购物车2.png"></a>
+      </div>
+    
+      
+    
+    <!-- footer -->
+    <section class="footer">
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="../index/index.html">home</a>
+                <a href="../product/products.html">products</a>
+                <a href="../about/about us.html">about</a>
+            </div>
+    
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+            </div>
+    
+            <div class="box">
+                <h3>Team member</h3>
+                <a href="#">646771 Ci Song</a>
+                <a href="#">646806 Jiaqi Xu</a>
+                <a href="#">646291 Wenxin Li</a>
+                <a href="#">646357 Yijia Gao</a>
+            </div>
+        </div>
+        <div class="credit"> created by <span> Group 12 </span> | all rights reserved </div>
+      </section>
+  
+
+
+    <!-- js for product card -->
+    <script>
+        const n338Button = document.getElementById('N338');
+        const n116Button = document.getElementById('N116');
+        const n402Button = document.getElementById('N402');
+        const n501Button = document.getElementById('N501');
+        
+        const productImage = document.getElementById('productImage');
+        
+        n338Button.addEventListener('click', () => {
+            productImage.src = './img/N338.jpg'; 
+        });
+        
+        n116Button.addEventListener('click', () => {
+            productImage.src = './img/N116.jpg'; 
+        });
+        
+        n402Button.addEventListener('click', () => {
+            productImage.src = './img/N402.jpg'; 
+        });
+
+        n501Button.addEventListener('click', () => {
+            productImage.src = './img/N501.jpg';
+        });
+        
+        productImage.src = './img/lipstick.png'; 
+
+        const sizeButtons = document.querySelectorAll('#sizess button');
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const selected = button.classList.contains('selected');
+                if (!selected) {
+                    sizeButtons.forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                    button.classList.add('selected');
+                }
+            });
+        });
+
+        const styleButtons = document.querySelectorAll('#styles button');
+        styleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const selected = button.classList.contains('selected');
+                if (!selected) {
+                    styleButtons.forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                    button.classList.add('selected');
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>

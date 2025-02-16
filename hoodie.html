@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon's Pocket</title>
+    <link rel="stylesheet" type="text/css" href="product-css.css">
+    <script src="product-js.js" defer></script>
+    <!---Add browser label icon--->
+    <link rel="shortcut icon" href="./img/shortcut-icon.jpg">
+</head>
+
+
+
+<body>
+    <!-- header -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="drop-down-menu"><img src="./img/下拉菜单.png" alt=""></label>
+
+        <img src="./img/logo.jpg" class="logo">
+
+        <nav class="navbar">
+            <a href="../index/index.html">HOME</a>
+            <a class="active" href="../product/products.html">PRODUCT</a>
+            <a href="../about/about us.html">ABOUT</a> 
+        </nav>
+        
+        <div class="icon-container">
+        <div class="icons">
+            <img src="./img/用户.png" id="registion_icon">
+            <a href="../Login/Login.html" class="login">login</a>   
+        </div>
+
+        <!------------------------ light dark mode swtich ------------------------------>
+        <div id="switch">
+            <label class="switch">
+            <input type="checkbox" onclick="changeMode()" style="background-image: url(./img/);">
+            <span class="slider"></span>
+            </label>
+        </div>
+        </div>
+        
+    </header>
+
+
+
+    <!-- product card -->
+    <div class="prod-card">
+        <div class="img">
+            <div class="image-zoom">
+                <img id="productImage" src="./img/lipstick.png">
+            </div>
+        </div>
+        <div class="prod-info">
+            <h2>Autumn&Winter Hooded Sweater</h2>
+            <span class="price"><i class="ion-social-usd"></i>￥89.9</span>
+           
+            <h3>Colors</h3>
+            <div class="button-container" id="colors">
+                <button id="pink">Pink</button>
+                <button id="blue">Dark Blue</button>
+                <button id="red">Red</button>
+                <button id="white">White</button>
+            </div>
+            
+            <h3>Sizes</h3>
+            <div class="button-container" id="sizesss">
+                <button class="colorBtn">S</button>
+                <button class="colorBtn">M</button>
+                <button class="colorBtn">L</button>
+                <button class="colorBtn">XL</button>
+                <button class="colorBtn">XXL</button>
+            </div>
+            
+            <a class="addbtn" href="#"><i class="ion-ios-cart"></i>Add to Cart</a>
+        </div>
+    </div>
+
+
+
+    <!-- Product Description 2 -->
+    <div class="product-description-2">
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/卫衣描述1.jpg" alt="Product 1">
+                <br>
+                <h2>Drawstring design</h2>
+            </div>
+            <div class="product-img">
+                <img src="./img/卫衣描述2.jpg" alt="Product 2">
+                <br>
+                <h2>Sweater cotton fabric</h2>
+            </div>
+            <div class="product-img">
+                <img src="./img/卫衣描述3.png" alt="Product 3">
+                <br>
+                <h2>Thread Design</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-description-2">
+        <div class="product-img">
+            <img src="./img/尺寸描述2.jpg" alt="Product 1">
+            <br>
+            <h2>Product Index</h2>
+        </div>
+        <br>
+        <br>
+        <div class="product-img">
+            <img src="./img/尺寸描述1.jpg" alt="Product 2">
+            <br>
+            <h2>Sizes Recommended</h2>
+        </div>
+    </div>
+
+
+
+    <!---------------------------------- fixedIcons --------------------------------------------->
+    <div class="fixedIcons">
+        <a href="" class="returnTop" title="returnTop" id="top-btn"><img src="./img/icon_回顶部.png"></a>
+        <a class="shopping_cart_icon"><img src="./img/购物车2.png"></a>
+      </div>
+    
+    <!-- footer -->
+    <section class="footer">
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="../index/index.html">home</a>
+                <a href="../product/products.html">products</a>
+                <a href="../about/about us.html">about</a>
+            </div>
+    
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+            </div>
+    
+            <div class="box">
+                <h3>Team member</h3>
+                <a href="#">646771 Ci Song</a>
+                <a href="#">646806 Jiaqi Xu</a>
+                <a href="#">646291 Wenxin Li</a>
+                <a href="#">646357 Yijia Gao</a>
+            </div>
+        </div>
+        <div class="credit"> created by <span> Group 12 </span> | all rights reserved </div>
+      </section>
+    
+    
+    <!-- js for product card -->
+    <script>
+        const pinkButton = document.getElementById('pink');
+        const blueButton = document.getElementById('blue');
+        const redButton = document.getElementById('red');
+        const whiteButton = document.getElementById('white');
+        
+        const productImage = document.getElementById('productImage');
+        
+        pinkButton.addEventListener('click', () => {
+            productImage.src = './img/pinkhoodie.jpg'; 
+        });
+        
+        blueButton.addEventListener('click', () => {
+            productImage.src = './img/bluehoodie.jpg';
+        });
+        
+        redButton.addEventListener('click', () => {
+            productImage.src = './img/redhoodie.jpg'; 
+        });
+
+        whiteButton.addEventListener('click', () => {
+            productImage.src = './img/whitehoodie.jpg'; 
+        });
+        
+        productImage.src = './img/hoodie.png'; 
+
+        const sizeButtons = document.querySelectorAll('#sizesss button');
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const selected = button.classList.contains('selected');
+                if (!selected) {
+                    sizeButtons.forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                    button.classList.add('selected');
+                }
+            });
+        });
+
+        const colorButtons = document.querySelectorAll('#colors button');
+        colorButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const selected = button.classList.contains('selected');
+                if (!selected) {
+                    colorButtons.forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                    button.classList.add('selected');
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
